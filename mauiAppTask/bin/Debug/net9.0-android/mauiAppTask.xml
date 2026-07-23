@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>mauiAppTask</name>
+    </assembly>
+    <members>
+        <member name="T:mauiAppTask.viewModels.AddTaskViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:mauiAppTask.viewModels.AddTaskViewModel.NewTask">
+            <inheritdoc cref="F:mauiAppTask.viewModels.AddTaskViewModel.newTask"/>
+        </member>
+        <member name="P:mauiAppTask.viewModels.AddTaskViewModel.NewDescription">
+            <inheritdoc cref="F:mauiAppTask.viewModels.AddTaskViewModel.newDescription"/>
+        </member>
+        <member name="F:mauiAppTask.viewModels.AddTaskViewModel.createTaskCommand">
+            <summary>The backing field for <see cref="P:mauiAppTask.viewModels.AddTaskViewModel.CreateTaskCommand"/>.</summary>
+        </member>
+        <member name="P:mauiAppTask.viewModels.AddTaskViewModel.CreateTaskCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:mauiAppTask.viewModels.AddTaskViewModel.CreateTask"/>.</summary>
+        </member>
+        <member name="F:mauiAppTask.viewModels.AddTaskViewModel.cancelCommand">
+            <summary>The backing field for <see cref="P:mauiAppTask.viewModels.AddTaskViewModel.CancelCommand"/>.</summary>
+        </member>
+        <member name="P:mauiAppTask.viewModels.AddTaskViewModel.CancelCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:mauiAppTask.viewModels.AddTaskViewModel.Cancel"/>.</summary>
+        </member>
+        <member name="T:mauiAppTask.viewModels.MainViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:mauiAppTask.viewModels.MainViewModel.Tareas">
+            <inheritdoc cref="F:mauiAppTask.viewModels.MainViewModel.tareas"/>
+        </member>
+        <member name="F:mauiAppTask.viewModels.MainViewModel.toggleStatusCommand">
+            <summary>The backing field for <see cref="P:mauiAppTask.viewModels.MainViewModel.ToggleStatusCommand"/>.</summary>
+        </member>
+        <member name="P:mauiAppTask.viewModels.MainViewModel.ToggleStatusCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:mauiAppTask.viewModels.MainViewModel.ToggleStatus(mauiAppTask.Models.Entities.Tarea)"/>.</summary>
+        </member>
+        <member name="F:mauiAppTask.viewModels.MainViewModel.goCreateTaskCommand">
+            <summary>The backing field for <see cref="P:mauiAppTask.viewModels.MainViewModel.GoCreateTaskCommand"/>.</summary>
+        </member>
+        <member name="P:mauiAppTask.viewModels.MainViewModel.GoCreateTaskCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:mauiAppTask.viewModels.MainViewModel.GoCreateTask"/>.</summary>
+        </member>
+        <member name="F:mauiAppTask.viewModels.MainViewModel.updateTaskListCommand">
+            <summary>The backing field for <see cref="P:mauiAppTask.viewModels.MainViewModel.UpdateTaskListCommand"/>.</summary>
+        </member>
+        <member name="P:mauiAppTask.viewModels.MainViewModel.UpdateTaskListCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:mauiAppTask.viewModels.MainViewModel.UpdateTaskList"/>.</summary>
+        </member>
+        <member name="T:mauiAppTask.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.NewTask">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "NewTask" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.NewDescription">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "NewDescription" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Tareas">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Tareas" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.NewTask">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "NewTask" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.NewDescription">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "NewDescription" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Tareas">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Tareas" generated properties.</summary>
+        </member>
+    </members>
+</doc>
