@@ -3,7 +3,7 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.Messaging;
 using mauiAppTask.Models.Entities;
-using mauiAppTask.Services;
+using mauiAppTask.Service;
 
 namespace mauiAppTask.viewModels
 {
@@ -12,10 +12,12 @@ namespace mauiAppTask.viewModels
         [ObservableProperty]
         private ObservableCollection<Tarea> tareas;
 
+        private readonly TaskService _taskService;
         public MainViewModel()
         {
-            Tareas = new ObservableCollection<Tarea>(TaskService.GetAll());
-            
+            _taskService = new TaskService();
+            Tareas = new ObservableCollection<Tarea>();
+
             WeakReferenceMessenger.Default.Register<string>(this, (r, m) =>
             {
                 if (m == "TaskCreated")
@@ -23,13 +25,24 @@ namespace mauiAppTask.viewModels
                     UpdateTaskList();
                 }
             });
+
+            // Carga inicial asíncrona (fire-and-forget intencional en constructor)
+#pragma warning disable CS4014
+            LoadTasksAsync();
+#pragma warning restore CS4014
+        }
+
+        private async Task LoadTasksAsync()
+        {
+            var list = await _taskService.GetAllAsync();
+            Tareas = new ObservableCollection<Tarea>(list);
         }
 
         [RelayCommand]
-        private void ToggleStatus(Tarea tarea)
+        private async Task ToggleStatus(Tarea tarea)
         {
-            TaskService.ChangeStatus(tarea.TareaID);
             tarea.Realizada = !tarea.Realizada;
+            await _taskService.UpdateTarea(tarea);
         }
 
     [RelayCommand]
@@ -39,11 +52,10 @@ namespace mauiAppTask.viewModels
     }
 
     [RelayCommand]
-    private void UpdateTaskList()
+    private async Task UpdateTaskList()
     {
-        Tareas.Clear();
-        foreach (var t in TaskService.GetAll())
-            Tareas.Add(t);
+        var list = await _taskService.GetAllAsync();
+        Tareas = new ObservableCollection<Tarea>(list);
     }
     }
 }

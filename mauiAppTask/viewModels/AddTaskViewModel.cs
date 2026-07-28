@@ -1,20 +1,26 @@
-using Android.Database;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.Messaging;
-using mauiAppTask.Services;
+using mauiAppTask.Models.Entities;
+using mauiAppTask.Service;
 
 namespace mauiAppTask.viewModels
 {
     public partial class AddTaskViewModel : ObservableObject
     {
         [ObservableProperty]
-        private string newTask;
+        private string? newTask;
         [ObservableProperty]
-        private string newDescription;
+        private string? newDescription;
+        private readonly TaskService _taskService;
+
+        public AddTaskViewModel()
+        {
+            _taskService = new TaskService();
+        }
 
         [RelayCommand]
-        private void CreateTask()
+        private async Task CreateTask()
         {
             if (!string.IsNullOrWhiteSpace(NewTask))
             {
@@ -22,13 +28,13 @@ namespace mauiAppTask.viewModels
                 {
                     NewDescription = "";
                 }
-                TaskService.CreateTask(NewTask, NewDescription);
+                await _taskService.CreateTask(new Tarea { Nombre = NewTask, Descripcion = NewDescription, Activa = true });
                 NewTask = string.Empty;
                 NewDescription = string.Empty;
-                
+
                 WeakReferenceMessenger.Default.Send("TaskCreated");
-                
-                Shell.Current.GoToAsync("..");
+
+                await Shell.Current.GoToAsync("..");
             }
         }
 

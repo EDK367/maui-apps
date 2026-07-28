@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3wiCYeUQQ3k=",
+  "dgSpecHash": "tq77+wSa/e0=",
   "success": true,
   "projectFilePath": "/home/edk367/Desktop/maui-apps/mauiAppTask/mauiAppTask.csproj",
   "expectedPackageFiles": [
@@ -24,6 +24,10 @@
     "/home/edk367/.nuget/packages/microsoft.maui.graphics/9.0.120/microsoft.maui.graphics.9.0.120.nupkg.sha512",
     "/home/edk367/.nuget/packages/microsoft.maui.resizetizer/9.0.120/microsoft.maui.resizetizer.9.0.120.nupkg.sha512",
     "/home/edk367/.nuget/packages/microsoft.net.illink.tasks/9.0.17/microsoft.net.illink.tasks.9.0.17.nupkg.sha512",
+    "/home/edk367/.nuget/packages/sourcegear.sqlite3/3.53.3/sourcegear.sqlite3.3.53.3.nupkg.sha512",
+    "/home/edk367/.nuget/packages/sqlite-net-pcl/1.11.285/sqlite-net-pcl.1.11.285.nupkg.sha512",
+    "/home/edk367/.nuget/packages/sqlitepclraw.core/3.0.3/sqlitepclraw.core.3.0.3.nupkg.sha512",
+    "/home/edk367/.nuget/packages/sqlitepclraw.provider.e_sqlite3/3.0.3/sqlitepclraw.provider.e_sqlite3.3.0.3.nupkg.sha512",
     "/home/edk367/.nuget/packages/xamarin.android.glide/4.16.0.12/xamarin.android.glide.4.16.0.12.nupkg.sha512",
     "/home/edk367/.nuget/packages/xamarin.android.glide.annotations/4.16.0.12/xamarin.android.glide.annotations.4.16.0.12.nupkg.sha512",
     "/home/edk367/.nuget/packages/xamarin.android.glide.disklrucache/4.16.0.12/xamarin.android.glide.disklrucache.4.16.0.12.nupkg.sha512",

@@ -1,8 +1,9 @@
 using mauiAppTask.Models.Entities;
+using mauiAppTask.Service;
 
-namespace mauiAppTask.Services
+namespace mauiAppTask.Service
 {
-    public class TaskService
+    public static class TaskService1
     {
         private static List<Tarea> _tareas = new();
         private static int nextInt = 1;

@@ -19,7 +19,7 @@
             <summary>The backing field for <see cref="P:mauiAppTask.viewModels.AddTaskViewModel.CreateTaskCommand"/>.</summary>
         </member>
         <member name="P:mauiAppTask.viewModels.AddTaskViewModel.CreateTaskCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:mauiAppTask.viewModels.AddTaskViewModel.CreateTask"/>.</summary>
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:mauiAppTask.viewModels.AddTaskViewModel.CreateTask"/>.</summary>
         </member>
         <member name="F:mauiAppTask.viewModels.AddTaskViewModel.cancelCommand">
             <summary>The backing field for <see cref="P:mauiAppTask.viewModels.AddTaskViewModel.CancelCommand"/>.</summary>
@@ -40,7 +40,7 @@
             <summary>The backing field for <see cref="P:mauiAppTask.viewModels.MainViewModel.ToggleStatusCommand"/>.</summary>
         </member>
         <member name="P:mauiAppTask.viewModels.MainViewModel.ToggleStatusCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:mauiAppTask.viewModels.MainViewModel.ToggleStatus(mauiAppTask.Models.Entities.Tarea)"/>.</summary>
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:mauiAppTask.viewModels.MainViewModel.ToggleStatus(mauiAppTask.Models.Entities.Tarea)"/>.</summary>
         </member>
         <member name="F:mauiAppTask.viewModels.MainViewModel.goCreateTaskCommand">
             <summary>The backing field for <see cref="P:mauiAppTask.viewModels.MainViewModel.GoCreateTaskCommand"/>.</summary>
@@ -52,7 +52,7 @@
             <summary>The backing field for <see cref="P:mauiAppTask.viewModels.MainViewModel.UpdateTaskListCommand"/>.</summary>
         </member>
         <member name="P:mauiAppTask.viewModels.MainViewModel.UpdateTaskListCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:mauiAppTask.viewModels.MainViewModel.UpdateTaskList"/>.</summary>
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:mauiAppTask.viewModels.MainViewModel.UpdateTaskList"/>.</summary>
         </member>
         <member name="T:mauiAppTask.Resource">
             <summary>

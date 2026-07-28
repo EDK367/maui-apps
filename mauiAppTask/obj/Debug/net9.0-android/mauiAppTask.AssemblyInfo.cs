@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("mauiAppTask")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+5fb91a8ffe9d0b5065b0e33c0a0333add5921da8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+1d2c699a10b77b0984b9fd22c97706d06cfc804c")]
 [assembly: System.Reflection.AssemblyProductAttribute("mauiAppTask")]
 [assembly: System.Reflection.AssemblyTitleAttribute("mauiAppTask")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

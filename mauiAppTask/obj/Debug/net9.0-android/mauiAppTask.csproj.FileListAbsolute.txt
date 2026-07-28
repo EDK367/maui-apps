@@ -941,3 +941,6 @@
 /home/edk367/Desktop/maui-apps/mauiAppTask/obj/Debug/net9.0-android/android/bin/x_com_class__companyname_mauiapptask____com_.x_com_class__companyname_mauiapptask____com_.apks
 /home/edk367/Desktop/maui-apps/mauiAppTask/obj/Debug/net9.0-android/android/assets/arm64-v8a/CommunityToolkit.Mvvm.dll
 /home/edk367/Desktop/maui-apps/mauiAppTask/obj/Debug/net9.0-android/android/src/x_com_class__companyname_mauiapptask____com_/x_com_class__companyname_mauiapptask____com_/R.java
+/home/edk367/Desktop/maui-apps/mauiAppTask/obj/Debug/net9.0-android/android/assets/arm64-v8a/SQLite-net.dll
+/home/edk367/Desktop/maui-apps/mauiAppTask/obj/Debug/net9.0-android/android/assets/arm64-v8a/SQLitePCLRaw.core.dll
+/home/edk367/Desktop/maui-apps/mauiAppTask/obj/Debug/net9.0-android/android/assets/arm64-v8a/SQLitePCLRaw.provider.e_sqlite3.dll
