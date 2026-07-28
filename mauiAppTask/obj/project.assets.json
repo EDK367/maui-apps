@@ -445,6 +445,22 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "Riok.Mapperly/4.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Riok.Mapperly.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Riok.Mapperly.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/Riok.Mapperly.targets": {}
+        }
+      },
       "SourceGear.sqlite3/3.53.3": {
         "type": "package",
         "compile": {
@@ -2984,6 +3000,22 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "Riok.Mapperly/4.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Riok.Mapperly.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Riok.Mapperly.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/Riok.Mapperly.targets": {}
+        }
+      },
       "SourceGear.sqlite3/3.53.3": {
         "type": "package",
         "compile": {
@@ -5346,6 +5378,22 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Riok.Mapperly/4.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Riok.Mapperly.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Riok.Mapperly.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/Riok.Mapperly.targets": {}
         }
       },
       "SourceGear.sqlite3/3.53.3": {
@@ -8429,6 +8477,36 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Riok.Mapperly/4.3.1": {
+      "sha512": "oSE+OVLHyiojrws0QVbQaAT2YKsYbyHqJXPdV7EhGseR/dYgeWS2x1T5qY5I4E+RJkJqMSG+FyZOq4SljWgJWQ==",
+      "type": "package",
+      "path": "riok.mapperly/4.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "analyzers/roslyn4.0/dotnet/cs/Riok.Mapperly.Abstractions.dll",
+        "analyzers/roslyn4.0/dotnet/cs/Riok.Mapperly.dll",
+        "analyzers/roslyn4.11/dotnet/cs/Riok.Mapperly.Abstractions.dll",
+        "analyzers/roslyn4.11/dotnet/cs/Riok.Mapperly.dll",
+        "analyzers/roslyn4.14/dotnet/cs/Riok.Mapperly.Abstractions.dll",
+        "analyzers/roslyn4.14/dotnet/cs/Riok.Mapperly.dll",
+        "analyzers/roslyn4.4/dotnet/cs/Riok.Mapperly.Abstractions.dll",
+        "analyzers/roslyn4.4/dotnet/cs/Riok.Mapperly.dll",
+        "analyzers/roslyn4.5/dotnet/cs/Riok.Mapperly.Abstractions.dll",
+        "analyzers/roslyn4.5/dotnet/cs/Riok.Mapperly.dll",
+        "analyzers/roslyn4.7/dotnet/cs/Riok.Mapperly.Abstractions.dll",
+        "analyzers/roslyn4.7/dotnet/cs/Riok.Mapperly.dll",
+        "analyzers/roslyn5.0/dotnet/cs/Riok.Mapperly.Abstractions.dll",
+        "analyzers/roslyn5.0/dotnet/cs/Riok.Mapperly.dll",
+        "build/Riok.Mapperly.targets",
+        "lib/netstandard2.0/Riok.Mapperly.Abstractions.dll",
+        "lib/netstandard2.0/Riok.Mapperly.Abstractions.xml",
+        "logo.png",
+        "riok.mapperly.4.3.1.nupkg.sha512",
+        "riok.mapperly.nuspec"
+      ]
+    },
     "SourceGear.sqlite3/3.53.3": {
       "sha512": "PaDT7JwQ00HmXZT1xSGSC0c24A5lVpJYHMrXBuJATdpB2t0nf4Kq9HyPaZhxVW0elPq4XI1s5BLh7qLuObmzFA==",
       "type": "package",
@@ -10406,6 +10484,7 @@
       "Microsoft.Extensions.Logging.Debug >= 9.0.9",
       "Microsoft.Maui.Controls >= 9.0.120",
       "Microsoft.NET.ILLink.Tasks >= 9.0.17",
+      "Riok.Mapperly >= 4.3.1",
       "sqlite-net-pcl >= 1.11.285"
     ]
   },
@@ -10471,6 +10550,10 @@
             "target": "Package",
             "version": "[9.0.17, )",
             "autoReferenced": true
+          },
+          "Riok.Mapperly": {
+            "target": "Package",
+            "version": "[4.3.1, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",
