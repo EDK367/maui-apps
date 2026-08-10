@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="articuloApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:articuloApp"
+    xmlns:view="clr-namespace:articuloApp.view"
+    Title="Articulo App"
+    FlyoutBehavior="Flyout"
+    Shell.BackgroundColor="#0A1528"
+    Shell.ForegroundColor="White"
+    Shell.TitleColor="White"
+    Shell.DisabledColor="Gray"
+    Shell.UnselectedColor="Gray"
+    Shell.TabBarBackgroundColor="#0A1528"
+    Shell.TabBarForegroundColor="White">
+
+
+   <Shell.FlyoutHeader>
+        <VerticalStackLayout BackgroundColor="#0A1528" Padding="16,30,16,20" Spacing="4">
+            <BoxView BackgroundColor="#C9A84C"
+             HeightRequest="4"
+             VerticalOptions="Start"
+             HorizontalOptions="Fill"
+             CornerRadius="2"
+             />
+            <Label Text="Menu"
+            TextColor="White"
+            FontSize="Large"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Padding="16"
+            />
+        </VerticalStackLayout>
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem Title="Fabricantes" Shell.FlyoutItemIsVisible="True">
+        <ShellContent
+            ContentTemplate="{DataTemplate view:FabricanteView}"
+            Route="FabricantesPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Articulos" Shell.FlyoutItemIsVisible="True">
+        <ShellContent
+            ContentTemplate="{DataTemplate view:ArticuloView}"
+            Route="ArticlesPage" />
+    </FlyoutItem>
+
+</Shell>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:articuloApp.model"
+             x:Class="articuloApp.view.ArticuloView"
+             Title="Artículos"
+             BackgroundColor="#0D1B3E">
+
+    <Grid RowDefinitions="Auto,Auto,*" Padding="16" RowSpacing="12">
+
+        <VerticalStackLayout Grid.Row="0" Spacing="6">
+            <BoxView Color="#C9A84C" HeightRequest="3" CornerRadius="2"/>
+            <Label Text="Gestión de Artículos"
+                   TextColor="#C9A84C"
+                   FontSize="20"
+                   FontAttributes="Bold"/>
+        </VerticalStackLayout>
+
+        <Frame Grid.Row="1"
+               BackgroundColor="#162040"
+               BorderColor="#2A3A6E"
+               CornerRadius="12"
+               Padding="16">
+            <VerticalStackLayout Spacing="10">
+
+                <Grid ColumnDefinitions="*,*" ColumnSpacing="10">
+                    <VerticalStackLayout Grid.Column="0" Spacing="4">
+                        <Label Text="Código" TextColor="#9BAACF" FontSize="12"/>
+                        <Entry x:Name="txtCodigo"
+                               Placeholder="Código"
+                               PlaceholderColor="#4A5A8E"
+                               TextColor="White"
+                               BackgroundColor="#1E2E55"
+                               Keyboard="Numeric"/>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout Grid.Column="1" Spacing="4">
+                        <Label Text="Nombre" TextColor="#9BAACF" FontSize="12"/>
+                        <Entry x:Name="txtNombre"
+                               Placeholder="Nombre"
+                               PlaceholderColor="#4A5A8E"
+                               TextColor="White"
+                               BackgroundColor="#1E2E55"/>
+                    </VerticalStackLayout>
+                </Grid>
+
+                <Grid ColumnDefinitions="*,*" ColumnSpacing="10">
+                    <VerticalStackLayout Grid.Column="0" Spacing="4">
+                        <Label Text="Precio" TextColor="#9BAACF" FontSize="12"/>
+                        <Entry x:Name="txtPrecio"
+                               Placeholder="0.00"
+                               PlaceholderColor="#4A5A8E"
+                               TextColor="White"
+                               BackgroundColor="#1E2E55"
+                               Keyboard="Numeric"/>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout Grid.Column="1" Spacing="4">
+                        <Label Text="Fabricante" TextColor="#9BAACF" FontSize="12"/>
+                        <Picker x:Name="pkFabricante"
+                                ItemDisplayBinding="{Binding Nombre}"
+                                TextColor="White"
+                                BackgroundColor="#1E2E55"
+                                TitleColor="#4A5A8E"
+                                Title="Seleccionar..."/>
+                    </VerticalStackLayout>
+                </Grid>
+
+                <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+                    <Label Text="Activo" TextColor="#9BAACF" VerticalOptions="Center"/>
+                    <Switch x:Name="swEstado" OnColor="#C9A84C" ThumbColor="White"/>
+                </HorizontalStackLayout>
+
+                <Grid ColumnDefinitions="*,*,*" ColumnSpacing="10">
+                    <Button Grid.Column="0"
+                            Text="Guardar"
+                            BackgroundColor="#C9A84C"
+                            TextColor="#0D1B3E"
+                            FontAttributes="Bold"
+                            CornerRadius="8"
+                            Clicked="OnGuardar"/>
+                    <Button Grid.Column="1"
+                            Text="Limpiar"
+                            BackgroundColor="#2A3A6E"
+                            TextColor="White"
+                            CornerRadius="8"
+                            Clicked="OnLimpiar"/>
+                    <Button Grid.Column="2"
+                            x:Name="btnEliminar"
+                            Text="Eliminar"
+                            BackgroundColor="#8B1A1A"
+                            TextColor="White"
+                            CornerRadius="8"
+                            IsEnabled="False"
+                            Clicked="OnEliminar"/>
+                </Grid>
+            </VerticalStackLayout>
+        </Frame>
+
+        <CollectionView x:Name="listaArticulos"
+                        Grid.Row="2"
+                        SelectionMode="Single"
+                        SelectionChanged="OnSeleccion">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:Articulo">
+                    <Frame Margin="0,4"
+                           BackgroundColor="#162040"
+                           BorderColor="#2A3A6E"
+                           CornerRadius="10"
+                           Padding="14,10">
+                        <Grid ColumnDefinitions="Auto,*,Auto">
+                            <BoxView Grid.Column="0"
+                                     Color="#4A90D9"
+                                     WidthRequest="4"
+                                     CornerRadius="2"
+                                     Margin="0,0,10,0"/>
+                            <VerticalStackLayout Grid.Column="1" Spacing="2">
+                                <Label Text="{Binding Nombre}"
+                                       TextColor="White"
+                                       FontAttributes="Bold"
+                                       FontSize="14"/>
+                                <Label Text="{Binding Codigo, StringFormat='Código: {0}'}"
+                                       TextColor="#9BAACF"
+                                       FontSize="12"/>
+                                <Label Text="{Binding Precio, StringFormat='Precio: Q{0:N2}'}"
+                                       TextColor="#C9A84C"
+                                       FontSize="12"/>
+                                <Label Text="{Binding Fabricante.Nombre, StringFormat='Fabricante: {0}'}"
+                                       TextColor="#9BAACF"
+                                       FontSize="11"/>
+                            </VerticalStackLayout>
+                            <Label Grid.Column="2"
+                                   TextColor="#C9A84C"
+                                   FontSize="12"
+                                   VerticalOptions="Center">
+                                <Label.Text>
+                                    <Binding Path="Estado" Converter="{StaticResource BoolToEstado}"/>
+                                </Label.Text>
+                            </Label>
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>
