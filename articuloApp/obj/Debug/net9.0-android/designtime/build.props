@@ -27,5 +27,5 @@ androidpackagenamingpolicy=lowercasecrc64
 _nugetassetsfilehash=e3ffad114dbf821251d5d0590562c3872fb8010e5dc0c13e1f814c5a763f5ffe
 typemapkind=strings-asm
 androidmanifestplaceholders=
-projectfullpath=/home/edk367/desktop/articuloapp/articuloapp.csproj
+projectfullpath=/home/edk367/desktop/maui-apps/articuloapp/articuloapp.csproj
 androidusedesignerassembly=true

@@ -20,49 +20,49 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = articuloApp
-build_property.ProjectDir = /home/edk367/Desktop/articuloApp/
+build_property.ProjectDir = /home/edk367/Desktop/maui-apps/articuloApp/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[/home/edk367/Desktop/articuloApp/App.xaml]
+[/home/edk367/Desktop/maui-apps/articuloApp/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = articuloApp.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[/home/edk367/Desktop/articuloApp/AppShell.xaml]
+[/home/edk367/Desktop/maui-apps/articuloApp/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = articuloApp.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[/home/edk367/Desktop/articuloApp/MainPage.xaml]
+[/home/edk367/Desktop/maui-apps/articuloApp/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = articuloApp.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[/home/edk367/Desktop/articuloApp/Resources/Styles/Colors.xaml]
+[/home/edk367/Desktop/maui-apps/articuloApp/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = articuloApp.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
 
-[/home/edk367/Desktop/articuloApp/Resources/Styles/Styles.xaml]
+[/home/edk367/Desktop/maui-apps/articuloApp/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = articuloApp.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
 
-[/home/edk367/Desktop/articuloApp/view/ArticuloView.xaml]
+[/home/edk367/Desktop/maui-apps/articuloApp/view/ArticuloView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = articuloApp.view.ArticuloView.xaml
 build_metadata.AdditionalFiles.TargetPath = view/ArticuloView.xaml
 build_metadata.AdditionalFiles.RelativePath = view/ArticuloView.xaml
 
-[/home/edk367/Desktop/articuloApp/view/FabricanteView.xaml]
+[/home/edk367/Desktop/maui-apps/articuloApp/view/FabricanteView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = articuloApp.view.FabricanteView.xaml
 build_metadata.AdditionalFiles.TargetPath = view/FabricanteView.xaml
