@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="parcial2Progra.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:parcial2Progra.Views"
+    FlyoutBehavior="Flyout"
+    Title="parcial2Progra">
+
+    <FlyoutItem Title="Home" Icon="home.png">
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate views:HomePage}"
+            Route="HomePage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Cursos" Icon="curso.png">
+        <ShellContent
+            Title="Cursos"
+            ContentTemplate="{DataTemplate views:CursosPage}"
+            Route="CursosPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Alumnos" Icon="alumno.png">
+        <ShellContent
+            Title="Alumnos"
+            ContentTemplate="{DataTemplate views:AlumnosPage}"
+            Route="AlumnosPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Asignaciones" Icon="asignacion.png">
+        <ShellContent
+            Title="Asignaciones"
+            ContentTemplate="{DataTemplate views:AsignacionesPage}"
+            Route="AsignacionesPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Acerca de" Icon="info.png">
+        <ShellContent
+            Title="Acerca de"
+            ContentTemplate="{DataTemplate views:AcercaPage}"
+            Route="AcercaPage" />
+    </FlyoutItem>
+
+</Shell>

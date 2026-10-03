@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="parcial2Progra.Views.CursosPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:parcial2Progra.ViewModels"
+    xmlns:models="clr-namespace:parcial2Progra.Models"
+    x:DataType="vm:CursosViewModel"
+    Title="Cursos">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="14">
+
+            <Label Text="Registrar Curso" FontSize="22" FontAttributes="Bold" HorizontalOptions="Center" />
+
+            <Frame BorderColor="#000000ff" BackgroundColor="#419d04ff" CornerRadius="12" Padding="16" HasShadow="True">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Nombre del Curso *" FontAttributes="Bold" />
+                    <Entry Text="{Binding Nombre}" Placeholder="Ej. Matemáticas I" />
+
+                    <Label Text="Descripción" FontAttributes="Bold" />
+                    <Editor Text="{Binding Descripcion}"
+                            Placeholder="Descripción del curso..."
+                            HeightRequest="80"
+                            AutoSize="TextChanges" />
+
+                    <Button Text="Guardar Curso"
+                            Command="{Binding GuardarCommand}"
+                            BackgroundColor="#6C63FF"
+                            TextColor="White"
+                            CornerRadius="10"
+                            Margin="0,8,0,0" />
+
+                    <Label Text="{Binding Mensaje}" HorizontalOptions="Center" FontAttributes="Italic" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <Label Text="Cursos Registrados" FontSize="18" FontAttributes="Bold" Margin="0,10,0,0" />
+
+            <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" Color="#6C63FF" />
+
+            <CollectionView ItemsSource="{Binding Cursos}" EmptyView="No hay cursos registrados.">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Curso">
+                        <Frame BorderColor="#000000ff" BackgroundColor="#419d04ff" CornerRadius="10" Padding="14" Margin="0,4" HasShadow="False">
+                            <Grid ColumnDefinitions="*,Auto">
+                                <VerticalStackLayout Grid.Column="0" Spacing="2">
+                                    <Label Text="{Binding Nombre, StringFormat='{0}'}" FontAttributes="Bold" FontSize="15" />
+                                    <Label Text="{Binding Descripcion}" TextColor="#555" FontSize="13" />
+                                </VerticalStackLayout>
+                                <Label Grid.Column="1"
+                                       Text="{Binding FechaMod, StringFormat='{0:dd/MM/yy}'}"
+                                       TextColor="#AAA" FontSize="11"
+                                       VerticalOptions="Start" />
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
